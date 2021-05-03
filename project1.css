@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar::before{
+    background-color: black;
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.5;
+
+
+}
+#navbar{
+    /* border:3px solid red;     */
+    border-radius: 30px;
+    /* position: relative; */
+    position: sticky;
+    top:0px; 
+
+}
+#navbar ul{
+    display: flex;
+    /* align-items: center; */
+}
+#navbar ul li{
+    /* border:3px solid green; */
+    list-style-type: none;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    
+}
+
+#navbar a{
+    /* border:3px solid blue; */
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    border-radius: 20px;
+    font-family: 'Anton', sans-serif;
+    color: #cadfee;
+
+}
+#navbar a:hover{
+    
+    /* background-color: rgb(196, 117, 117); */
+    cursor: pointer;
+    color: white;
+
+}
+
+#content{
+    /* border:3px solid green; */
+    margin: 10px 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+
+}
+#content::before{
+    background: url('project1photo.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0px;
+    bottom:0px;
+    left:0px;
+    z-index: -1;
+    opacity:0.7
+}
+#content h2{
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    color:#5c1610;
+}
+#content p{
+    border:2px solid #285b73;
+    border-radius: 20px;
+    text-align: justify;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    
+}
+.btn{
+    /* border:2px solid red; */
+    border-radius: 20px;
+    padding: 9px 30px;
+    margin: 10px 15px;
+    border: 2px solid #9a1f56;
+    background-color: #e4d7db;
+    color: white;
+    cursor: pointer;
+
+    
+    }
+    .btn a{
+        text-decoration: none;
+        color:black;
+        font-size: 1rem;
+        font-family: 'Redressed', cursive;
+    }
+    
+    #clients::before{
+        background-color: black;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+         z-index: -1;
+         opacity: 0.8;
+         top: 10px;
+
+    }
+    #clients{
+        /* position: relative; */
+        /* border:2px solid blue; */
+        top: 50px;
+        position: relative;
+        display:flex;
+        justify-content: center;
+         align-items: center;
+        flex-direction: column;
+    }
+
+    #clients h2{
+        margin: 10px;
+        color: white;
+    }
+
+    .ourclients img{
+        height: 50px;
+        /* width: 20px; */
+        /* border:2px solid red; */
+        margin: 10px 10px;
+       
+
+    }
